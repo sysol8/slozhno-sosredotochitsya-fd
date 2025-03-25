@@ -1,4 +1,14 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --page-line-height: 23.4px;
+  --title-line-height: 83%;
+  --page-font-family: 'IBM Plex Mono', Arial, Helvetica, sans-serif;
+  --accent-color: rgb(255, 0, 112);
+  --title-color: rgb(219, 0, 255);
+  --h2-color: rgb(255, 0, 112);
+  --h3-color: rgb(0, 0, 40);
+  --text-color: rgb(241, 178, 206);
+  --accent-title-text-shadow: 4px 4px 0 var(--accent-color);
+  --normal-font-weight: 400;
+  --bold-font-weight: 700;
+  --page-background-image: url('../images/cover-image-dark.png');
+}

@@ -1,9 +1,11 @@
-/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
@@ -20,12 +22,17 @@ h5,
 h6,
 p {
   margin: 0;
+  font-size: inherit;
 }
 
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+img {
+  width: 100%;
 }
 
 picture {
@@ -39,4 +46,8 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  background: none;
 }
