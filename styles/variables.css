@@ -9,5 +9,6 @@
   --accent-title-text-shadow: 4px 4px 0 var(--accent-color);
   --normal-font-weight: 400;
   --bold-font-weight: 700;
+  --page-background-color: rgb(0, 40, 40);
   --page-background-image: url('../images/cover-image-dark.png');
 }

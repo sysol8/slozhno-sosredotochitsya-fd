@@ -1,16 +1,97 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --accent-color: rgb(255, 0, 112);
+  --title-color: rgb(219, 0, 255);
+  --decorated-title-color: rgb(0, 0, 40);
+  --text-color: rgb(241, 178, 206);
+  --accent-title-text-shadow: 4px 4px 0 var(--accent-color);
+  --page-background-color: rgb(0, 0, 40);
+  --page-background-image: url('../images/cover-image-dark.png');
 }
 
 .theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+  background-color: var(--page-background-color);
+  background-image: var(--page-background-image);
+}
+
+.theme-dark .header__description {
+  color: var(--decorated-title-color);
+}
+
+.theme-dark .section__title,
+.theme-dark .header__theme-menu-button {
+  color: var(--accent-color);
+}
+
+.theme-dark .header__theme-menu-button:hover {
+  outline: 1px solid rgba(255, 0, 112, 0.4);
+}
+
+.theme-dark .header__theme-menu-button:focus-visible {
+  border-color: var(--accent-color);
+}
+
+.theme-dark .header__theme-menu-button_active {
+  outline-color: var(--accent-color);
+}
+
+.theme-dark .decorated-zone::before {
+  border-color: var(--accent-color) var(--accent-color) transparent transparent;
+}
+
+.theme-dark .decorated-zone::after {
+  border-color: transparent transparent var(--accent-color) var(--accent-color);
+}
+
+.theme-dark .footer__title {
+  text-shadow: 2px 2px 0 rgb(255, 0, 112);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: rgb(255, 0, 112);
+  --title-color: rgb(219, 0, 255);
+  --decorated-title-color: rgb(0, 0, 40);
+  --text-color: rgb(241, 178, 206);
+  --accent-title-text-shadow: 4px 4px 0 var(--accent-color);
+  --page-background-color: rgb(0, 0, 40);
+  --page-background-image: url('../images/cover-image-dark.png');
+  }
+
+  .page {
+    background-color: var(--page-background-color);
+    background-image: var(--page-background-image);
+  }
+
+  .header__description {
+    color: var(--decorated-title-color);
+  }
+
+  .section__title,
+  .header__theme-menu-button {
+    color: var(--accent-color);
+  }
+
+  .header__theme-menu-button:hover {
+    outline: 1px solid rgba(255, 0, 112, 0.4);
+  }
+
+  .header__theme-menu-button:focus-visible {
+    border-color: var(--accent-color);
+  }
+
+  .header__theme-menu-button_active {
+    outline-color: var(--accent-color);
+  }
+
+  .decorated-zone::before {
+    border-color: var(--accent-color) var(--accent-color) transparent transparent;
+  }
+
+  .decorated-zone::after {
+    border-color: transparent transparent var(--accent-color) var(--accent-color);
+  }
+
+  .footer__title {
+    text-shadow: 2px 2px 0 rgb(255, 0, 112);
+  }
 }

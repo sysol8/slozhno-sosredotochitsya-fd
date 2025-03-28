@@ -3,6 +3,7 @@
   font-weight: var(--font-weight-normal);
   font-size: 1.8rem;
   line-height: var(--page-line-height);
+  background-color: var(--page-background-color);
   background-image: var(--page-background-image);
   background-repeat: no-repeat;
   background-position: center;

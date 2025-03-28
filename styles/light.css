@@ -4,11 +4,13 @@
   --h2-color: rgb(53, 52, 48);
   --decorated-title-color: rgb(53, 52, 48, 1);
   --text-color: rgba(53, 52, 48, 1);
+  --page-background-color: rgb(255, 241, 247, 1);
   --page-background-image: url('../images/cover-image-light.png');
 }
 
 .theme-light .page {
-  background-color: var(--page-background);
+  background-color: var(--page-background-color);
+  background-image: var(--page-background-image);
 }
 
 .theme-light .header__decoration {
@@ -52,11 +54,13 @@
     --h2-color: rgb(53, 52, 48);
     --decorated-title-color: rgb(53, 52, 48, 1);
     --text-color: rgba(53, 52, 48, 1);
+    --page-background-color: rgb(255, 241, 247, 1);
     --page-background-image: url('../images/cover-image-light.png');
   }
 
   .page {
-    background-color: var(--page-background);
+    background-color: var(--page-background-color);
+    background-image: var(--page-background-image);
   }
   
   .header__decoration {
