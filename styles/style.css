@@ -135,6 +135,7 @@
 
 .section__title {
   color: var(--accent-color);
+  grid-row: span 2;
 }
 
 .cards {
@@ -166,10 +167,6 @@
 .card__description-link:hover {
   border-bottom: 1px solid currentColor;
   outline: none;
-}
-
-.section__title {
-  grid-row: span 2;
 }
 
 .card__subtitle {
@@ -327,6 +324,19 @@
 
   .title {
     font-size: 15.7rem;
+  }
+
+  .cards__title_position_top {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cards__title_position_top > .section__title {
+    grid-row: 1;
+  }
+
+  .cards__title_position_top .card {
+    grid-row: 2;
+    grid-column: initial;
   }
 
   .footer__title {
