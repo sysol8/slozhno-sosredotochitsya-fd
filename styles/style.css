@@ -1,8 +1,7 @@
 .page {
-  padding: 1rem;
   font-family: var(--page-font-family);
   font-weight: var(--font-weight-normal);
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: var(--page-line-height);
   background-image: var(--page-background-image);
   background-repeat: no-repeat;
@@ -47,9 +46,9 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  line-height: 2.5rem;
   color: var(--accent-color);
   font-family: var(--page-font-family);
+  line-height: 2.5rem;
 }
 
 .header__decoration::before {
@@ -83,8 +82,8 @@
 }
 
 .header__theme-menu-button:focus {
-  outline: none;
   border: none;
+  outline: none;
 }
 
 .header__theme-menu-button:focus-visible {
@@ -153,8 +152,8 @@
 }
 
 .card__description-link:focus {
-  outline: none;
   border: none;
+  outline: none;
 }
 
 .card__description-link:focus-visible {
@@ -199,7 +198,6 @@
 
 @media (width >= 768px) {
   .page {
-    padding: 2rem;
   }
 
   .header {
