@@ -309,8 +309,18 @@
 }
 
 @media (width >= 1024px) {
+  .header {
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+
+  
   .decorated-zone::before {
     grid-row: 1;
+  }
+
+  .decorated-zone::after {
+    grid-row: 5;
   }
 
   .header__theme-menu {
@@ -325,6 +335,12 @@
 
   .title {
     font-size: 15.7rem;
+    grid-row: 3;
+    align-self: center;
+  }
+
+  .header__description {
+    grid-row: 4;
   }
 
   .cards__title_position_top {
