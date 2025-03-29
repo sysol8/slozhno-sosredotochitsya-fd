@@ -115,7 +115,7 @@
   line-height: var(--title-line-height);
   text-transform: lowercase;
   text-shadow: var(--accent-title-text-shadow);
-  padding-block: 5.5rem 5.5rem; 
+  padding-block: 5.5rem; 
 }
 
 .header__description {
