@@ -5,12 +5,7 @@
   --decorated-title-color: rgb(53, 52, 48, 1);
   --text-color: rgba(53, 52, 48, 1);
   --page-background-color: rgb(255, 241, 247, 1);
-  --page-background-image: url('../images/cover-image-light.png');
-}
-
-.theme-light .page {
-  background-color: var(--page-background-color);
-  background-image: var(--page-background-image);
+  --page-background-image: url("../images/cover-image-light.png");
 }
 
 .theme-light .header__decoration {
@@ -24,15 +19,15 @@
 }
 
 .theme-light .header__theme-menu-button:hover {
-  outline: 1px solid rgba(53, 52, 48, 0.4)
+  outline: 1px solid rgba(53, 52, 48, 0.4);
 }
 
 .theme-light .header__theme-menu-button:focus-visible {
-  border-color: var(--text-color);
+  border-color: currentColor;
 }
 
 .theme-light .header__theme-menu-button_active {
-  outline-color: var(--text);
+  outline-color: currentColor;
 }
 
 .theme-light .decorated-zone::before {
@@ -55,45 +50,32 @@
     --decorated-title-color: rgb(53, 52, 48, 1);
     --text-color: rgba(53, 52, 48, 1);
     --page-background-color: rgb(255, 241, 247, 1);
-    --page-background-image: url('../images/cover-image-light.png');
+    --page-background-image: url("../images/cover-image-light.png");
   }
 
-  .page {
-    background-color: var(--page-background-color);
-    background-image: var(--page-background-image);
-  }
-  
-  .header__decoration {
-    display: none;
-  }
-  
-  .header__description,
-  .section__title,
-  .header__theme-menu-button {
-    color: var(--text-color);
-  }
-  
-  .header__theme-menu-button:hover {
-    outline: 1px solid rgba(53, 52, 48, 0.4)
-  }
-  
-  .header__theme-menu-button:focus-visible {
-    border-color: var(--text-color);
-  }
-  
-  .header__theme-menu-button_active {
-    outline-color: var(--text);
-  }
-  
-  .decorated-zone::before {
-    border-color: var(--text-color) var(--text-color) transparent transparent;
-  }
-  
-  .decorated-zone::after {
-    border-color: transparent transparent var(--text-color) var(--text-color);
-  }
-  
-  .footer__title {
-    text-shadow: 2px 2px 0 rgb(255, 0, 112);
+  .theme-auto {
+    .header__decoration {
+      display: none;
+    }
+
+    .decorated-zone::after {
+      border-color: transparent transparent var(--text-color) var(--text-color);
+    }
+
+    .decorated-zone::before {
+      border-color: var(--text-color) var(--text-color) transparent transparent;
+    }
+
+    .header__theme-menu-button {
+      color: var(--text-color);
+    }
+
+    .header__theme-menu-button:hover {
+      outline-color: rgba(53, 52, 48, 0.4);
+    }
+
+    .section__title {
+      color: var(--text-color);
+    }
   }
 }
