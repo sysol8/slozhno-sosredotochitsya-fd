@@ -1,9 +1,12 @@
 :root.theme-light {
-  --accent-color: rgb(255, 141, 203);
-  --title-color: rgb(255, 194, 230);
+  --theme-button-color: rgb(53, 52, 48);
+  --decorated-zone-color: rgb(53, 52, 48);
   --h2-color: rgb(53, 52, 48);
   --decorated-title-color: rgb(53, 52, 48, 1);
   --text-color: rgba(53, 52, 48, 1);
+  --button-hover-outline-color: 1px solid rgba(53, 52, 48, 0.4);
+  --accent-color: rgb(255, 141, 203);
+  --title-color: rgb(255, 194, 230);
   --page-background-color: rgb(255, 241, 247, 1);
   --page-background-image: url("../images/cover-image-light.png");
 }
@@ -12,53 +15,25 @@
   display: none;
 }
 
-.theme-light .header__description,
-.theme-light .section__title,
-.theme-light .header__theme-menu-button {
-  color: var(--text-color);
-}
-
-.theme-light .header__theme-menu-button:hover {
-  outline: 1px solid rgba(53, 52, 48, 0.4);
-}
-
-.theme-light .header__theme-menu-button:focus-visible {
-  border-color: currentColor;
-}
-
-.theme-light .header__theme-menu-button_active {
-  outline-color: currentColor;
-}
-
-.theme-light .decorated-zone::before {
-  border-color: var(--text-color) var(--text-color) transparent transparent;
-}
-
-.theme-light .decorated-zone::after {
-  border-color: transparent transparent var(--text-color) var(--text-color);
-}
-
-.theme-light .footer__title {
-  text-shadow: 2px 2px 0 rgb(255, 0, 112);
-}
-
 @media (prefers-color-scheme: light) {
   :root {
-    --accent-color: rgb(255, 141, 203);
-    --title-color: rgb(255, 194, 230);
+    --theme-button-color: rgb(53, 52, 48);
+    --decorated-zone-color: rgb(53, 52, 48);
     --h2-color: rgb(53, 52, 48);
     --decorated-title-color: rgb(53, 52, 48, 1);
     --text-color: rgba(53, 52, 48, 1);
+    --button-hover-outline-color: 1px solid rgba(53, 52, 48, 0.4);
+    --accent-color: rgb(255, 141, 203);
+    --title-color: rgb(255, 194, 230);
     --page-background-color: rgb(255, 241, 247, 1);
     --page-background-image: url("../images/cover-image-light.png");
   }
 
-  .theme-auto {
-    .header__decoration {
+  .theme-auto .header__decoration {
       display: none;
     }
 
-    .decorated-zone::after {
+    /* .decorated-zone::after {
       border-color: transparent transparent var(--text-color) var(--text-color);
     }
 
@@ -76,6 +51,6 @@
 
     .section__title {
       color: var(--text-color);
-    }
-  }
+    } */
 }
+

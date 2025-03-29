@@ -1,4 +1,8 @@
 :root {
+  --h2-color: rgb(225, 0, 112);
+  --theme-button-color: rgb(255, 0, 112);
+  --decorated-zone-color: rgb(225, 0, 112);
+  --button-hover-outline-color: 1px solid rgba(255, 0, 112, 0.4);
   --page-line-height: 23.4px;
   --title-line-height: 83%;
   --page-font-family: 'IBM Plex Mono', Arial, Helvetica, sans-serif;

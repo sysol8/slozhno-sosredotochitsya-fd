@@ -1,9 +1,13 @@
 :root.theme-dark {
+  --h2-color: rgb(225, 0, 112);
+  --theme-button-color: rgb(225, 0, 112);
+  --decorated-zone-color: rgb(225, 0, 112);
   --accent-color: rgb(255, 0, 112);
+  --button-hover-outline-color: 1px solid rgba(255, 0, 112, 0.4);
   --title-color: rgb(219, 0, 255);
-  --decorated-title-color: rgb(0, 0, 40);
   --text-color: rgb(241, 178, 206);
+  --page-background-color: rgb(0, 40, 40);
+  --decorated-title-color: rgb(0, 0, 40);
   --accent-title-text-shadow: 4px 4px 0 var(--accent-color);
-  --page-background-color: rgb(0, 0, 40);
-  --page-background-image: url("../images/cover-image-dark.png");
+  --page-background-image: url('../images/cover-image-dark.png');
 }
