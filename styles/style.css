@@ -139,8 +139,15 @@
 }
 
 .section__title {
-  grid-row: 1 / -1;
   color: var(--h2-color);
+}
+
+.section-why__title {
+  grid-row: 1 / -1;
+}
+
+.section-how__title {
+  grid-row: 1 / 3;
 }
 
 .cards {
@@ -361,7 +368,7 @@
     grid-auto-rows: 1fr;
   }
 
-  .cards-section-what > .section__title {
+  .section-what__title {
     grid-column: span 3;
     grid-row: 1;
     inline-size: 315px;
