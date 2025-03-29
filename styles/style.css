@@ -107,6 +107,11 @@
   pointer-events: none;
 }
 
+.header__description {
+  font-size: 1.8rem;
+  align-self: start;
+}
+
 .title {
   align-self: end;
   color: var(--title-color);
@@ -116,11 +121,6 @@
   text-transform: lowercase;
   text-shadow: var(--accent-title-text-shadow);
   padding-block: 5.5rem; 
-}
-
-.header__description {
-  font-size: 1.8rem;
-  align-self: start;
 }
 
 .title-decor {
